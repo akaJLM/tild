@@ -1,5 +1,5 @@
-tild - small footprint front end framework
-==========================================
+tild - tiny front end framework
+===============================
 
 Resume
 ------
@@ -8,7 +8,9 @@ Resume
 
 Currently compatible with IE9+, Chrome, Firefox, Opera, Safari
 
-I lost all my files yesterday, I rebuild this idea rapidely this morning and it's only an incomplete Alpha idea - also nothing already tested yet because I lost also a lot of search on some css hack for all classes (to work fine with each other), I lost some of my proper effects (now it's safe here, also if it's an incomplete Alpha idea).
+Under going test + minimal fix (like grid) for IE6, IE7, IE8.
+
+I lost all my files yesterday, I rebuild this idea rapidely this morning and it's only an incomplete Alpha version - also nothing (or only a very small part) already tested yet because I lost also a lot of search on some css hack for all classes (to work fine with each other), I lost some of my proper effects (now it's safe here, also if it's an incomplete Alpha version).
 
 Reset: normalize.css v1.1.2 by http://necolas.github.io/normalize.css/
 
@@ -19,7 +21,7 @@ The grid structure is very simple
 
 All is in pourcent (already as possible) 
 
-remark: currently, some css hack was lost and it's already necessary to made some search on css hack and (re)fix it (the .box-* in use with in-* and out-*)
+remark: currently, some css hack was lost when I lost my files and it's already necessary to made some search on css hack and (re)fix it (the .box-* in use with in-* and out-*) and fix the group-h. The first time, the float tech worked fine (also with the class sep) but now it's necessary to re-build and re-test some thing
 
 <pre>
             .in-* (implied "inset" = padding)
@@ -66,14 +68,14 @@ A concept of "Airiness" is introduced
 
 This concept can be placed in the middle of this front end framework with the two default classes: .layout AND .grid.
 
-The first idea was to create a js file to manage some dynamic css part generated directly in the dom. this idea was abandonned (not usefull for a few css generated in real usage). Now it's more a "css starter point" for any project more then "real front end framework" because this part is now include directly in the css and can be modifiable (!update).
+The first idea was to create a js file to manage some dynamic css part generated directly in the dom before /header. this idea was abandonned (not usefull for a few css generated in real usage). Now it's more a "css starter point" for any project more then a "real front end framework" because this part is now include directly in tild.ext.css and can be modifiable (!update).
 
 We cannot disturb also the .layout class reserved to the most popular part for a designer (big header element, big nav, big section, big footer element or an entire particular page layout).
 
 javascript usage
 ----------------
 
-If you need to use javascript, create an empty class prefixed "js-your-dom-manipulation-class" (cross-browser) or use data-js="your-event" (modern-browser only) or if you have a complex app your can divided by "brick" data-js="brickname-your-event" or data-js-brickname="your-event" (just idea - was tested).
+If you need to use javascript in your project, create an empty class prefixed "js-*" (cross-browser) or use data-js="your-event" (modern-browser only) or if you have a complex app your can divided by "brick" data-js="brickname-your-event" or data-js-brickname="your-event" (just idea - was tested).
 
 Leave id already "free" for the back end developer / integrator / wai-ria architect / ... .
 
@@ -83,3 +85,9 @@ Two group for fx
 One group integrated in the CSS file when the effect is not likely to interfere with the user experience (UX) when a browser don't support this effect. Like blur, shake, etc...
 
 The others - not integrated here (leave to the discretion/choice of the developer of the final app). Like a slider effect for a home page with some elements in position absolute, cheating z-index, etc... (not included here).
+
+TO FIX
+------
+
+- .group-h > .sep
+- .in-*.box-*.out-*

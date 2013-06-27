@@ -25,8 +25,6 @@ h1,h2,h3,h4,h5,h6 {
     -webkit-margin-after: 0;
     -moz-margin-before: 0;
     -moz-margin-after: 0;
-    margin-before: 0;
-    margin-after: 0;
 }
 
 .box-block, .box-a, .box-00, .box-05, .box-10, .box-15, .box-20, .box-25, .box-30, .box-33, .box-35, .box-40, .box-45, .box-50, .box-55, .box-60, .box-65, .box-66, .box-70, .box-75, .box-80, .box-85, .box-90, .box-95, .box-100 {
@@ -430,7 +428,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .layout, .floats-clean {
-    *zoom: 1;
+    *zoom: 1
 }
 
 .floats-clean:before,
@@ -591,18 +589,17 @@ h1,h2,h3,h4,h5,h6 {
     -moz-transition: .1s linear -moz-box-shadow;
     -ms-transition: .1s linear box-shadow;
     -o-transition: .1s linear box-shadow;
-    transition: .1s linear box-shadow;
+    transition: .1s linear box-shadow
 }
 
-.btn:hover, 
-.btn-style-hover {
+.btn:hover, .btn-style-hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
     background-image: -webkit-gradient(linear,0 0,0 100%,from(transparent),color-stop(40%,rgba(0,0,0,.05)),to(rgba(0,0,0,.1)));
     background-image: -webkit-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
     background-image: -moz-linear-gradient(top,rgba(0,0,0,.05) 0,rgba(0,0,0,.1));
     background-image: -ms-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
     background-image: -o-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
-    background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1))
 }
 
 .btn:active {
@@ -614,11 +611,11 @@ h1,h2,h3,h4,h5,h6 {
     -moz-box-sizing:border-box;
     box-sizing:border-box;
     display: inline-block;
-   *display: inline;
+   *display: inline
 }
 
 .group-v > .group-v {
-    display: block;
+    display: block
 }
 
 .group-h > .btn, .group-h > .sep-v, .group-h > li > .btn, .group-h > li > .sep-v {
@@ -627,7 +624,7 @@ h1,h2,h3,h4,h5,h6 {
     box-sizing:border-box;
     *display: inline;
     min-width: 1px;
-    min-height: 1px;
+    min-height: 1px
 }
 
 .group-v > .btn, .group-v > .sep-h, .group-v >li > .btn, .group-v > li > .sep-h {
@@ -642,7 +639,7 @@ h1,h2,h3,h4,h5,h6 {
 .group-v.group-v-fx-radius > .btn, .group-h.group-h-fx-radius > .btn, .group-v.group-v-fx-radius > li > .btn, .group-h.group-h-fx-radius > li > .btn {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
-    border-radius: 0;
+    border-radius: 0
 }
 .group-v-fx-radius > .btn:first-child, .group-v-fx-radius > li:first-child > .btn {
     -webkit-border-top-left-radius: 3px;
@@ -674,7 +671,7 @@ h1,h2,h3,h4,h5,h6 {
     -moz-border-radius-topright: 3px;
     -moz-border-radius-bottomright: 3px;
     border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px
 }
 
 .line-h, .sep-h {
@@ -782,19 +779,19 @@ h1,h2,h3,h4,h5,h6 {
 .fx-box-radius {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;
+    border-radius: 3px
 
 }
 .fx-box-shadowed {
     -webkit-box-shadow: 0 10px 6px -6px #777;
-       -moz-box-shadow: 0 10px 6px -6px #777;
-            box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777
 }
 
 .fx-box-shadowed-white {
     -webkit-box-shadow: 0 10px 6px -6px rgba(255, 255, 255, 0.5);
-       -moz-box-shadow: 0 10px 6px -6px rgba(255, 255, 255, 0.5);
-            box-shadow: 0 10px 6px -6px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0 10px 6px -6px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 6px -6px rgba(255, 255, 255, 0.5)
 }
 
 .fx-box-curve-light {
@@ -817,7 +814,7 @@ h1,h2,h3,h4,h5,h6 {
     -moz-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     -o-transform: rotate(-3deg);
-    transform: rotate(-3deg);
+    transform: rotate(-3deg)
 }
 .fx-box-curve-light:after {
     -webkit-transform: rotate(3deg);
@@ -826,7 +823,7 @@ h1,h2,h3,h4,h5,h6 {
     -o-transform: rotate(3deg);
     transform: rotate(3deg);
     right: 10px;
-    left: auto;
+    left: auto
 }
 
 .fx-box-curve-high {
