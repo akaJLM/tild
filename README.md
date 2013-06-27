@@ -59,16 +59,18 @@ Only left, top, right, bottom, center, auto - and maybe some other (few) element
 
 Only class name like effect, text, background, inset, outset, ... - can be minified (a comprehensive value) like fx, txt, bg, in, out, ...
 
-The objective: Each class is only a css hack capable to work correctly with each other (more freedom on the design e.g. .btn design, design of stacked elements, etc...). If the css is not a hack, it's something like an effect, a color, ... (already matched with a class name with (-?)fx-, (-?)color- like .bg-color, etc...). If starting with fx- is not a friendly class name for the autocompletion or for the developer, we can start with a "family" starter-name e.g. .bg-color, .bg-fx-something, ...
+The objective: Each class is only a css hack capable to work correctly with each other (more freedom on the design e.g. .btn design, design of stacked elements, etc...). If the css is not a hack, it's something like an effect, a color, ... (already matched with a class name with (-?)fx-, (-?)color- like .bg-color, etc...). 
 
-Each class must be autocompletion friendly, developer friendly (its name) and aligned with its most valuable "family" name if it's necessary for autocompletion.
+If starting with fx-* is not a friendly class name for the autocompletion and the developer, we can start with a "family" starter-name e.g. .bg-color, .bg-fx-something, ...
+
+Each class must be autocompletion friendly, developer friendly (its name) and aligned with its most valuable "family" name if it's necessary for the autocompletion.
 
 A concept of "Airiness" is introduced
 -------------------------------------
 
 This concept can be placed in the middle of this front end framework with the two default classes: .layout AND .grid.
 
-The first idea was to create a js file to manage some dynamic css part generated directly in the dom before /header. this idea was abandonned (not usefull for a few css generated in real usage). Now it's more a "css starter point" for any project more then a "real front end framework" because this part is now include directly in tild.ext.css and can be modifiable (!update).
+The first idea was to create a js file to manage some dynamic css part generated directly in the dom before /head. this idea was abandonned (not usefull for a few css generated in real usage). Now it's more a "css starter point" for any project more then a "real front end framework" because this part is now include directly in tild.ext.css and can be modifiable (!update - rename this file with the name of the project).
 
 We cannot disturb also the .layout class reserved to the most popular part for a designer (big header element, big nav, big section, big footer element or an entire particular page layout).
 
@@ -84,10 +86,17 @@ Two group for fx
 
 One group integrated in the CSS file when the effect is not likely to interfere with the user experience (UX) when a browser don't support this effect. Like blur, shake, etc...
 
-The others - not integrated here (leave to the discretion/choice of the developer of the final app). Like a slider effect for a home page with some elements in position absolute, cheating z-index, etc... (not included here).
+The others - not integrated here (leave to the discretion/choice of the developer of the final app) because it's hardeness to introduce multiple style and it's a heavy task for a very small part of a site where this part is too dependent of the general design and designer, also for the footprint this kind of things are not introduced in tild. Like a complex slider for a home page with some elements in position absolute, cheating z-index, multiple files types, multiples tabs, etc... (not included here because you have also a large choice of wheels already build on the web). 
+
+Maybe in a near future a very simple and responsive (ultra small footprint) slider and only based on css3 hack can be introduced.
 
 TO FIX
 ------
 
 - .group-h > .sep
 - .in-*.box-*.out-*
+
+TO ADD
+------
+
+- one simple class (small series) to create easily a slider (CSS3 only, no-js except ie6 to 8 to fix it) with a ultra small footprint
