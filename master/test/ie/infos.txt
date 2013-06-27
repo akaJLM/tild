@@ -1,0 +1,4 @@
+tild.css base css is already compatible with IE9, IE10+, Firefox, Chrome, Opera, Safari.
+
+
+These files concern only IE6, IE7, IE8 and are loaded only dynamicaly with media queries and one by one (only if it's necessary)

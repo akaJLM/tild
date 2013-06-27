@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en"><!--manifest="cache.manifest"-->
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        
+        <title>akaJLM - Web développeur en Belgique</title>
+
+        <meta name="author" content="Laurent B. akaJLM">
+        <meta name="copyright" content="©Laurent B. akaJLM">
+        <meta name="Designer" content="Laurent B. akaJLM">
+
+        <meta name="description" content="akaJLM - Développeur web, auteur de tild, ultra small footprint front end framework et blabla, ultra small footprint back end framework.">
+
+        <!-- tild - to edit -->
+        <link rel="apple-touch-icon" href="touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="touch-pad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="touch-retina.png" />
+        
+        <!-- tild - nothing to edit -->
+        <link rel="stylesheet" href="css/tild.min.css" media="screen, projection">
+
+        <!-- tild - your working copy -->
+        <link rel="stylesheet" href="css/tild.ext.min.css" media="screen, projection">
+
+        <!-- tild - printable stylizing -->
+        <link rel="stylesheet" href="css/tild.print.min.css" media="print">
+
+        <!-- Font(s) -->
+        <link href="http://fonts.googleapis.com/css?family=Merienda" rel="stylesheet" type="text/css" media="screen, projection">
+        <link href="http://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet" type="text/css" media="screen, projection">
+        
+        <style type="text/css" media="screen, projection">
+            body {
+                color: #777;
+                font-family: 'Merienda', cursive;
+            }
+            .btn {
+                font-family: 'Lily Script One', serif;
+            }
+        </style>
+
+        <!-- IE6, IE7, IE8 compatible (nothing yet was tested)-->
+
+        <!--[if lt IE 9]>
+
+            <link rel="stylesheet" href="ie/tild-ie.desktop.min.css" media="screen and (min-width:980px)">
+            <link rel="stylesheet" href="ie/tild-ie.phone.min.css" media="screen and (max-width:480px)">
+            <link rel="stylesheet" href="ie/tild-ie.tablet.min.css" media="screen and (max-width:767px)">
+            <link rel="stylesheet" href="ie/tild-ie.tablet-wide.min.css" media="screen and (min-width:768px) and (max-width:979px)">
+            <script src="ie/media-queries.min.js"></script>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+        <![endif]-->
+
+    </head>
+
+    <body aria-labelledby="title" aria-describedby="desc"> 
+
+        <header class="layout box-block bg-blue brd-b brd-black" role="banner">
+
+            <h1 class="pre-02-50 box-20 in-02 txt-white fx-point-out-wiggle" id="title">akaJLM</h1>
+
+            <div class="box-30 in-02 txt-white" id="desc">{ is_callable($fb) ? call_user_func($fb, sprintf('https://github.com/%s', $tild)) : ''; }</div>
+
+            <nav class="box-40 box-fix-c float-r in-02 post-02-50" role="navigation" aria-labelledby="mainnavTitle">
+
+                <span hidden id="mainnavTitle">Menu principal</span>
+
+                <span class="box-100 group-h group-h-fx-radius">
+            
+                   <a class="btn btn-blue txt-light in-02" role="link" tabindex="0" href="#" title="Link 1">Home</a>
+                   <span class="sep-v bg-white"></span>
+                   <a class="btn btn-blue txt-light in-02" role="link" tabindex="1" href="#" title="Link 2">About</a>
+                   <span class="sep-v bg-white"></span>
+                   <a class="btn btn-blue txt-light in-02" role="link" tabindex="2" href="#" title="Link 3">Portfolio</a>
+                   <span class="sep-v bg-white"></span>
+                   <a class="btn btn-blue txt-light in-02" role="link" tabindex="2" href="#" title="Link 3">Blog</a>
+                   <span class="sep-v bg-white"></span>
+                   <a class="btn btn-blue txt-light in-02" role="link" tabindex="4" href="#" title="Link 5">Contact</a>
+
+               </span>
+
+                <!--<ul class="group-v in-00-50 pos-abs" role="link" tabindex="5" href="#" title="Categories" hidden>
+                    <li role="menuitem" aria-labelledby="title-catid1">
+                        <a role="link" id="title-catid1" href="#" title="Cat 1">Cat 1</a>
+                        <span role="seealso"><a href="#" title="">Article 1 Cat 1</a></span>
+                        <span role="seealso"><a href="#" title="">Article 2 Cat 1</a></span>
+                    </li>
+                    <li role="menuitem" aria-labelledby="title-catid2">
+                        <a role="link" id="title-catid2" href="#" title="Cat 2">Cat 2</a>
+                        <span role="seealso"><a href="#" title="">Article 1 Cat 2</a></span>
+                        <span role="seealso"><a href="#" title="">Article 2 Cat 2</a></span>
+                    </li>
+                    <li role="menuitem" aria-labelledby="title-catid3">
+                        <a role="link" id="title-catid3" href="#" title="Cat 3">Cat 3</a>
+                        <span role="seealso"><a href="#" title="">Article 1 Cat 3</a></span>
+                        <span role="seealso"><a href="#" title="">Article 2 Cat 3</a></span>
+                    </li>
+                </ul>-->
+            </nav>
+
+        </header>
+        
+        <section class="layout" role="main" aria-lebelledby="sectionType">
+
+            <!-- If you use "complementary" here, a big slide of your categories in the TOP menu is necessary-->
+            <aside class="grid pre-02-50 box-15 marg-t-03 float-l post-02-50 fx-txt-glow fx-point-out-pulse" aria-labelledby="sideTitle">
+
+                <h3 class="marg-t-02 marg-b-02" id="sideTitle">Sidebar</h3>
+
+                <ul class="box-100 group-v ul-no-list" role="navigation">
+                    
+                    <li><a class="btn btn-grey txt-white visible-desktop" onClick="window.print()">Imprimer</a></li>
+                    <span class="sep-h bg-blue"></span>
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="0" href="#">Link 1</a></li>
+                    <span class="sep-h bg-blue"></span>
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="1" href="#">Link 2</a></li>
+                    <span class="sep-h bg-blue"></span>
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="2" href="#">Link 3</a></li>
+                    <span class="sep-h bg-blue"></span>
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="3" href="#">Link 4</a></li>
+                    <span class="sep-h bg-blue"></span>
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="4" href="#">Link 5</a></li>
+
+                </ul>
+
+                <ul class="box-100 group-v group-v-fx-radius ul-no-list" role="seealso">
+                    
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="0" href="#">Link 1</a></li>
+                    <span class="sep-h bg-blue"></span>
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="1" href="#">Link 2</a></li>
+                    <span class="sep-h bg-blue"></span>
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="2" href="#">Link 3</a></li>
+                    <span class="sep-h bg-blue"></span>
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="3" href="#">Link 4</a></li>
+                    <span class="sep-h bg-blue"></span>
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="4" href="#">Link 5</a></li>
+
+                </ul>
+
+                <ul class="box-100 group-v ul-no-list" role="navigation">
+                    
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="0" href="#">Link 1</a></li>
+                    <span class="sep-h bg-blue"></span>
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="1" href="#">Link 2</a></li>
+                    <span class="sep-h bg-blue"></span>
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="2" href="#">Link 3</a></li>
+                    <span class="sep-h bg-blue"></span>
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="3" href="#">Link 4</a></li>
+                    <span class="sep-h bg-blue"></span>
+                    <li><a class="btn btn-blue txt-white" role="link" tabindex="4" href="#">Link 5</a></li>
+
+                </ul>
+            </aside>
+            
+            <section class="grid box-80">
+
+                <ul class="breadcrumb in-01 out-03" id="sectionType" role="navigation">
+                    Vous êtes ici:
+                    <li><a class="txt-grey" role="link" href="#">Home</a></li>
+                    <li><a class="txt-grey" role="link" href="#">test</a></li>
+                </ul>
+            
+                <article class="fx-box-curve-light bg-white brd brd-light" role="article" aria-lebelledby="title-id1" aria-describedby="content-id1">
+                    
+                    <header class="grid" role="banner">
+
+                        <h2 class="box-100" id="title-id1">Article 1 title</h2>
+
+                        <div class="box-100 marg-t-02 bg-light txt-white brd brd-light">
+                            
+                            <address class="box-30 author">By <a class="btn txt-white" rel="author" href="http://example.com/author/john-doe" title="John Doe">John Doe</a></address>
+                        
+                            <time class="float-r" pubdate datetime="2010-08-20T11:34:47+00:00" title="August 20, 2010 11:34:47">Vendredi 20 août 2010</time>
+
+                        </div>
+                        
+                    </header>
+                    
+                    <section class="marg-t-03" id="content-id1" role="main">
+
+                        <p id="resume-id1" aria-flowto="link-id1">Phasellus eget est in enim feugiat sodales ut quis neque. Sed ac hendrerit nibh, id dignissim leo. Aenean massa enim, tempus ut odio nec, pharetra dignissim enim. Donec posuere scelerisque vestibulum. Maecenas venenatis venenatis fringilla. Nullam consectetur a nisi ut scelerisque. Proin in tortor purus. Praesent pharetra mattis ante, varius eleifend magna tempus convallis</p>
+
+                        <a id="link-id1" class="btn bg-blue marg-t-02 fx-box-shadowed txt-white in-00-50 float-r" href="#">Continue reading...</a>
+
+                    </section>
+
+                    <footer class="marg-t-03" role="contentinfo">
+
+                        <span role="navigation">Catégorie: <a class="btn bg-light txt-white in-01" role="link" href="#">Blabla</a></span>
+                        <span role="navigation">tags: <a class="btn bg-light txt-white in-01" role="link" href="#">blo</a></span>
+                        
+                    </footer>
+                    
+                </article>
+                    
+
+                <article class="fx-box-curve-light bg-white brd brd-light" role="article" aria-lebelledby="title-id2" aria-describedby="content-id2">
+                    
+                    <header class="grid" role="banner">
+
+                        <h2 class="box-100" id="title-id2">Article 1 title</h2>
+
+                        <div class="box-100 marg-t-02 bg-light txt-white brd brd-light">
+                            
+                            <address class="box-30 author">By <a class="btn txt-white" rel="author" href="http://example.com/author/john-doe" title="John Doe">John Doe</a></address>
+                        
+                            <time class="float-r" pubdate datetime="2010-08-20T11:34:47+00:00" title="August 20, 2010 11:34:47">Vendredi 20 août 2010</time>
+
+                        </div>
+                        
+                    </header>
+                    
+                    <section class="marg-t-03" id="content-id2" role="main">
+
+                        <p id="resume-id2" aria-flowto="link-id2">Phasellus eget est in enim feugiat sodales ut quis neque. Sed ac hendrerit nibh, id dignissim leo. Aenean massa enim, tempus ut odio nec, pharetra dignissim enim. Donec posuere scelerisque vestibulum. Maecenas venenatis venenatis fringilla. Nullam consectetur a nisi ut scelerisque. Proin in tortor purus. Praesent pharetra mattis ante, varius eleifend magna tempus convallis</p>
+
+                        <a id="link-id2" class="btn bg-blue marg-t-02 fx-box-shadowed txt-white in-00-50 float-r" href="#">Continue reading...</a>
+
+                    </section>
+
+                    <footer class="marg-t-03" role="contentinfo">
+
+                        <span role="navigation">Catégorie: <a class="btn bg-light txt-white in-01" role="link" href="#">Blabla</a></span>
+                        <span role="navigation">tags: <a class="btn bg-light txt-white in-01" role="link" href="#">blo</a></span>
+                        
+                    </footer>
+                    
+                </article>
+
+                 <article class="fx-box-curve-light bg-white brd brd-light" role="article" aria-lebelledby="title-id3" aria-describedby="content-id3">
+                    
+                    <header class="grid" role="banner">
+
+                        <h2 class="box-100" id="title-id3">Article 1 title</h2>
+
+                        <div class="box-100 marg-t-02 bg-light txt-white brd brd-light">
+                            
+                            <address class="box-30 author">By <a class="btn txt-white" rel="author" href="http://example.com/author/john-doe" title="John Doe">John Doe</a></address>
+                        
+                            <time class="box-a float-r" pubdate datetime="2010-08-20T11:34:47+00:00" title="August 20, 2010 11:34:47">Vendredi 20 août 2010</time>
+
+                        </div>
+                        
+                    </header>
+                    
+                    <section class="marg-t-03" id="content-id3" role="main">
+
+                        <p id="resume-id3" aria-flowto="link-id3">Phasellus eget est in enim feugiat sodales ut quis neque. Sed ac hendrerit nibh, id dignissim leo. Aenean massa enim, tempus ut odio nec, pharetra dignissim enim. Donec posuere scelerisque vestibulum. Maecenas venenatis venenatis fringilla. Nullam consectetur a nisi ut scelerisque. Proin in tortor purus. Praesent pharetra mattis ante, varius eleifend magna tempus convallis</p>
+
+                        <a id="link-id3" class="btn bg-blue marg-t-02 fx-box-shadowed txt-white in-00-50 float-r" href="#">Continue reading...</a>
+
+                    </section>
+
+                    <footer class="marg-t-03" role="contentinfo">
+
+                        <span role="navigation">Catégorie: <a class="btn bg-light txt-white in-01" role="link" href="#">Blabla</a></span>
+                        <span role="navigation">tags: <a class="btn bg-light txt-white in-01" role="link" href="#">blo</a></span>
+                        
+                    </footer>
+                    
+                </article>
+
+            </section>
+
+        </section>
+
+        <footer class="layout box-100 marg-t-03 in-03 bg-blue brd-t brd-light txt-c txt-white" role="contentinfo">
+
+            <p class="fix-c">&copy;Blabla Enterprise - tous droits réservés. Powered by <a class="btn bg-white txt-black in-00-50" title="tild - ultra small footprint front end framework" href="#">tild</a> front end framework and <a class="btn bg-white txt-black in-00-50" title="blabla - ultra small footprint back end framework" href="#">blabla</a> back end framework</p>
+            
+        </footer>
+
+    </body>
+</html>
