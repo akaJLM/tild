@@ -1,5 +1,5 @@
-tild - minimal front end framework
-==================================
+tild - small footprint front end framework
+==========================================
 
 Resume
 ------
