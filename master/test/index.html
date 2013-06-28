@@ -20,13 +20,13 @@
         <link rel="apple-touch-icon" sizes="114x114" href="touch-retina.png" />
         
         <!-- tild - nothing to edit -->
-        <link rel="stylesheet" href="css/tild.min.css" media="screen, projection">
+        <link rel="stylesheet" href="./css/tild.min.css" media="screen, projection">
 
         <!-- tild - your working copy -->
-        <link rel="stylesheet" href="css/tild.ext.min.css" media="screen, projection">
+        <link rel="stylesheet" href="./css/tild.ext.min.css" media="screen, projection">
 
-        <!-- tild - printable stylizing -->
-        <link rel="stylesheet" href="css/tild.print.min.css" media="print">
+        <!-- tild - nothing to edit - printable stylizing -->
+        <link rel="stylesheet" href="./css/tild.print.min.css" media="print">
 
         <!-- Font(s) -->
         <link href="http://fonts.googleapis.com/css?family=Merienda" rel="stylesheet" type="text/css" media="screen, projection">
@@ -42,17 +42,22 @@
             }
         </style>
 
-        <!-- IE6, IE7, IE8 compatible (nothing yet was tested)-->
-
+        <!--  only grid and responsive: IE6 to fix, IE7 reasonably, IE8 ok -->
+        
         <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-            <link rel="stylesheet" href="ie/tild-ie.desktop.min.css" media="screen and (min-width:980px)">
-            <link rel="stylesheet" href="ie/tild-ie.phone.min.css" media="screen and (max-width:480px)">
-            <link rel="stylesheet" href="ie/tild-ie.tablet.min.css" media="screen and (max-width:767px)">
-            <link rel="stylesheet" href="ie/tild-ie.tablet-wide.min.css" media="screen and (min-width:768px) and (max-width:979px)">
-            <script src="ie/media-queries.min.js"></script>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <!--[if IE 8]>
+        <script src="ie/tild.ie8.min.js"></script>
+        <![endif]-->
 
+        <!--[if IE 7]>
+        <script src="ie/tild.ie7.min.js"></script>
+        <![endif]-->
+
+        <!--[if IE 6]>
+        <script src="ie/tild.ie6.min.js"></script>
         <![endif]-->
 
     </head>
@@ -172,7 +177,7 @@
 
                         <div class="box-100 marg-t-02 bg-light txt-white brd brd-light">
                             
-                            <address class="box-30 author">By <a class="btn txt-white" rel="author" href="http://example.com/author/john-doe" title="John Doe">John Doe</a></address>
+                            <address class="box-30 author">By <a class="btn bg-light txt-white" rel="author" href="http://example.com/author/john-doe" title="John Doe">John Doe</a></address>
                         
                             <time class="float-r" pubdate datetime="2010-08-20T11:34:47+00:00" title="August 20, 2010 11:34:47">Vendredi 20 août 2010</time>
 
@@ -206,7 +211,7 @@
 
                         <div class="box-100 marg-t-02 bg-light txt-white brd brd-light">
                             
-                            <address class="box-30 author">By <a class="btn txt-white" rel="author" href="http://example.com/author/john-doe" title="John Doe">John Doe</a></address>
+                            <address class="box-30 author">By <a class="btn bg-light txt-white" rel="author" href="http://example.com/author/john-doe" title="John Doe">John Doe</a></address>
                         
                             <time class="float-r" pubdate datetime="2010-08-20T11:34:47+00:00" title="August 20, 2010 11:34:47">Vendredi 20 août 2010</time>
 
@@ -239,7 +244,7 @@
 
                         <div class="box-100 marg-t-02 bg-light txt-white brd brd-light">
                             
-                            <address class="box-30 author">By <a class="btn txt-white" rel="author" href="http://example.com/author/john-doe" title="John Doe">John Doe</a></address>
+                            <address class="box-30 author">By <a class="btn bg-light txt-white" rel="author" href="http://example.com/author/john-doe" title="John Doe">John Doe</a></address>
                         
                             <time class="box-a float-r" pubdate datetime="2010-08-20T11:34:47+00:00" title="August 20, 2010 11:34:47">Vendredi 20 août 2010</time>
 

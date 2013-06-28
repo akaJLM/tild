@@ -21,18 +21,23 @@
         
         <!-- tild - printable stylizing -->
         <link rel="stylesheet" href="css/tild.print.min.css" media="print">
-        
-        <!-- IE6, IE7, IE8 compatible (nothing yet was tested)-->
+
+        <!--  only grid and responsive: IE6 to fix, IE7 approximate, IE8 ok -->
         
         <!--[if lt IE 9]>
-        
-            <link rel="stylesheet" href="ie/tild-ie.desktop.min.css" media="screen and (min-width:980px)">
-            <link rel="stylesheet" href="ie/tild-ie.phone.min.css" media="screen and (max-width:480px)">
-            <link rel="stylesheet" href="ie/tild-ie.tablet.min.css" media="screen and (max-width:767px)">
-            <link rel="stylesheet" href="ie/tild-ie.tablet-wide.min.css" media="screen and (min-width:768px) and (max-width:979px)">
-            <script src="ie/media-queries.min.js"></script>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!--[if IE 8]>
+        <script src="ie/tild.ie8.min.js"></script>
+        <![endif]-->
+
+        <!--[if IE 7]>
+        <script src="ie/tild.ie7.min.js"></script>
+        <![endif]-->
+
+        <!--[if IE 6]>
+        <script src="ie/tild.ie6.min.js"></script>
         <![endif]-->
 
     </head>
@@ -370,5 +375,6 @@
                 <div><button type="submit">Submit (button)</button></div>
             </fieldset>
         </form>
+        
     </body>
 </html>
