@@ -12,9 +12,7 @@ Under going test + minimal fix (like grid) for IE6, IE7, IE8.
 
 I lost all my files yesterday, I rebuild this idea rapidely this morning and it's only an incomplete Alpha version - also nothing (or only a very small part) already tested yet because I lost also a lot of search on some css hack for all classes (to work fine with each other), I lost some of my proper effects (now it's safe here, also if it's an incomplete Alpha version).
 
-Reset: normalize.css v1.1.2 by http://necolas.github.io/normalize.css/
-
-IE6, IE7, IE8 media-queries support by https://github.com/scottjehl/Respond/
+css browser align: normalize.css v1.1.2 by http://necolas.github.io/normalize.css/
 
 The grid structure is very simple
 ---------------------------------
