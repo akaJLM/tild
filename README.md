@@ -4,7 +4,7 @@ tild - tiny front end framework
 Resume
 ------
 
-**A simple front end framework - more a starter point then a real front-end framework (also it's a Alpha idea, nothing tested yet)**
+**A simple front end framework - more a starter point then a real front-end framework (also it's a Alpha version, only a small part tested yet)**
 
 Currently compatible with IE9+, Chrome, Firefox, Opera, Safari
 
@@ -21,7 +21,7 @@ The grid structure is very simple
 
 All is in pourcent (already as possible) 
 
-remark: currently, some css hack was lost when I lost my files and it's already necessary to made some search on css hack and (re)fix it (the .box-* in use with in-* and out-*) and fix the group-h. The first time, the float tech worked fine (also with the class sep) but now it's necessary to re-build and re-test some thing
+remark: currently, some css hack was lost when I lost all my files and it's already necessary to made some search on some css hack and (re)fix it (the .box-* in use with in-* and out-*) and also fix the group-h. The first time on my latest files, the float technic worked fine (also with the class sep in group-h) but now it's necessary to re-build and re-test some things.
 
 <pre>
             .in-* (implied "inset" = padding)
