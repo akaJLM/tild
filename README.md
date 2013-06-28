@@ -59,7 +59,7 @@ Only class name like effect, text, background, inset, outset, ... - can be minif
 
 The objective: Each class is only a css hack capable to work correctly with each other (more freedom on the design e.g. .btn design, design of stacked elements, etc...). If the css is not a hack, it's something like an effect, a color, ... (already matched with a class name with (-?)fx-, (-?)color- like .bg-color, etc...). 
 
-If starting with fx-* is not a friendly class name for the autocompletion and the developer, we can start with a "family" starter-name e.g. .bg-color, .bg-fx-something, ...
+If starting with fx-* is not a friendly class name for the autocompletion and the developer (viewable in the auto completion list = auto learn), we can start with a "family" starter-name e.g. .bg-color, .bg-fx-something, ...
 
 Each class must be autocompletion friendly, developer friendly (its name) and aligned with its most valuable "family" name if it's necessary for the autocompletion.
 
