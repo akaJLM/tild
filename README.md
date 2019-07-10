@@ -68,7 +68,7 @@ A concept of "Airiness" is introduced
 
 This concept can be placed in the middle of this front end framework with the two default classes: .layout AND .grid.
 
-The first idea was to create a js file to manage some dynamic css part generated directly in the dom before /head. this idea was abandonned (not usefull for a few css generated in real usage). Now it's more a "css starter point" for any project more then a "real front end framework" because this part is now include directly in tild.ext.css and can be modifiable (!update - rename this file with the name of the project).
+The first idea was to create a js file to manage some dynamic css part generated directly in the dom before /head. this idea was abandoned (not usefull for a few css generated in real usage). Now it's more a "css starter point" for any project more then a "real front end framework" because this part is now include directly in tild.ext.css and can be modifiable (!update - rename this file with the name of the project).
 
 We cannot disturb also the .layout class reserved to the most popular part for a designer (big header element, big nav, big section, big footer element or an entire particular page layout).
 
